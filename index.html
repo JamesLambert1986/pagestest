@@ -1,1 +1,487 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Your brand new fundraising experience | Virgin Money Giving</title>
+  <link href="https://staging.uk.virginmoneygiving.com/giving/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://staging.uk.virginmoneygiving.com/giving/assets/css/brochureware.min.css" rel="stylesheet" />
+  
+  
+  
+  <style>
+  
+  @font-face {
+    font-family: Tondo;
+    src: url(tondo_std-webfont.eot);
+    src: url(tondo_std-webfont.eot?#iefix) format("embedded-opentype"),url(tondo_std-webfont.woff) format("woff"),url(tondo_std-webfont.svg#TondoRegular) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: TondoLight;
+    src: url(Tondo_W_Lt.eot);
+    src: url(Tondo_W_Lt.eot?#iefix) format("embedded-opentype"),url(Tondo_W_Lt.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: TondoBold;
+    src: url(tondo_std_bold-webfont.eot);
+    src: url(tondo_std_bold-webfont.eot?#iefix) format("embedded-opentype"),url(tondo_std_bold-webfont.woff) format("woff"),url(tondo_std_bold-webfont.svg#TondoRegular) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: FocoLight;
+    src: url(Foco_W_Lt.eot);
+    src: url(Foco_W_Lt.eot?#iefix) format("embedded-opentype"),url(Foco_W_Lt.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: FocoReg;
+    src: url(Foco_W_Rg.eot);
+    src: url(Foco_W_Rg.eot?#iefix) format("embedded-opentype"),url(Foco_W_Rg.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Entypo;
+    src: url(entypo.eot);
+    src: url(entypo.eot?#iefix) format("embedded-opentype"),url(entypo.woff) format("woff"),url(entypo.svg#Entypo) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+  
+  
+  
+  
+	.temp-banner-text {
+		
+		font-size: 36px;
+	}
+	
+	.center-text {
+		text-align: center;
+	}
+	
+	.feature {
+		position: relative;
+	}
+	
+	.feature--right .feature__text{
+		float: right;
+		padding-right: 8.33333333%;
+	}
+	
+	.feature + .feature:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height:4px;
+		background: #e3e3e3;
+		margin-top: -36px;
+	}
+	
+	.need-reg {
+		position: relative;
+	}
+	
+	.need-reg:after {
+		content:"\00ae";
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin-right: -14px;
+		margin-bottom: -18px;
+	}
+	
+	@media (min-width: 639px) {
+		
+		.temp-banner-text {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			font-size: 3em;
+		}
+			
+		.feature + .feature:before {
+			width: calc(100% - 60px);
+			margin-left: 30px;
+		}
+	
+		.feature__img {
+		
+			padding-right: 30px;
+		}
+	}
+  </style>
+  
+</head>
+
+<body>
+
+<div class="navbar-default">
+   <div class="row-xl-fix">
+   <a href="/giving/index.jsp" class="logo_HomeLink"><img alt="Virgin Money Giving" src="http://staging.uk.virginmoneygiving.com/giving/assets/img/vmg-logo.png" /></a>
+   <nav class="navbar m-b-0">
+      <div class="navbar-header">
+         <a class="global-menu"><span class="menu-icon">&#9776;</span> Menu</a>
+	    <a class="sign-in" href="/fundraiser-portal/userSignIn-SSL">Sign in </a>
+      </div>
+   </nav>
+
+   <nav class="global-menu_Nav"> 
+      <ul class="globalNavDropdown topNav" id="myTopnav">
+         <li><a href="/fundraiser-portal/search">Make a donation</a></li>
+         <li>
+            <a href="#" id="showSecondaryNav-fundraiser">Fundraise</a>
+            <nav id="secondaryNavOptions-fundraiser" class="secondary-menu_Nav collapse">
+               <ul class="secondaryNavDropdown row-xl-fix">
+                  <li class="col-sm-6 col-md-4 ">
+                     <a href="/fundraiser-portal/handleFundraisingAction/fundraisingPage" class="clearfix globalNavItem globalNavItem-fundraise">
+                        Create a page
+                        <p>Whatever you're doing create your page now.</p>
+                     </a>
+                  </li>
+                  <li class="col-sm-6 col-md-4">
+                     <a href="/fundraiser-portal/handleFundraisingAction/teamPage" class="clearfix globalNavItem globalNavItem-team">
+                        Fundraise as a team
+                        <p>A team page allows you and your friends to fundraise together.</p>
+                     </a>
+                  </li>
+                  <div class="clearfix visible-sm-block"></div>
+                  <li class="col-sm-6 col-md-4">
+                     <a href="/fundraiser-portal/handleFundraisingAction/inMemPage" class="clearfix globalNavItem globalNavItem-inmemory">
+                        Raise funds in memory
+                        <p>Raise funds in support or in memory of someone special.</p>
+                     </a>
+                  </li>
+                  <div class="clearfix visible-md-block"></div>
+                  <li class="col-sm-6 col-md-4">
+                     <a href="#" class="clearfix globalNavItem globalNavItem-faqs">
+                        FAQs
+                        <p>Got a question? Check out our FAQs for fundraisers.</p>
+                     </a>
+                  </li>
+                  <div class="clearfix visible-sm-block"></div>
+                  <li class="col-sm-6 col-md-4">
+                     <a href="/fundraiser-portal/userSignIn" class="clearfix globalNavItem globalNavItem-signin">
+                        Sign in
+                        <p>Manage and update your existing fundraising pages.</p>
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+         </li>
+         <li>
+            <a href="#" id="showSecondaryNav-charity">For charities</a>
+            <nav id="secondaryNavOptions-charity" class="secondary-menu_Nav collapse">
+               <ul class="secondaryNavDropdown row-xl-fix">
+                  <li class="col-sm-6 col-md-4 ">
+                     <a href="/giving/register-charity.jsp" class="clearfix globalNavItem globalNavItem-registercharity">
+                        Register your charity
+                        <p>Register with us and start maximising your donations.</p>
+                     </a>
+                  </li>
+                  <li class="col-sm-6 col-md-4">
+                     <a href="/giving/about-us/best-deal-for-charities.jsp" class="clearfix globalNavItem globalNavItem-team">
+                        Best deal for charities
+                        <p>Helping every charity make the most of online fundraising.</p>
+                     </a>
+                  </li>
+                  <div class="clearfix visible-sm-block"></div>
+                  <li class="col-sm-6 col-md-4">
+                     <a href="/giving/help-guides/charities/" class="clearfix globalNavItem globalNavItem-helpguides">
+                        Help and guides
+                        <p>Get the most form Virgin Money Giving with our tips and tricks.</p>
+                     </a>
+                  </li>
+                  <div class="clearfix visible-md-block"></div>
+                  <li class="col-sm-6 col-md-4">
+                     <a href="/giving/faq.jsp" class="clearfix globalNavItem globalNavItem-faqs">
+                        FAQs
+                        <p>Got a question? Check out our FAQs for charities.</p>
+                     </a>
+                  </li>
+                  <div class="clearfix visible-sm-block"></div>
+                  <li class="col-sm-6 col-md-4">
+                     <a href="/charity-web/charity/signInAction.action-SSL" class="clearfix globalNavItem globalNavItem-signin">
+                        Sign in
+                        <p>Manage your charity account.</p>
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+         </li>
+      </ul>
+   </nav>
+
+   <nav class="row-xl-fix pos-relative">
+      <ul class="globalNavDropdown myAccountDropdown" id="myAccountNav">
+        <li><a href="/fundraiser-portal/dashboard">My profile</a></li>
+        <li><a href="/fundraiser-portal/showFundraiserActivities">My fundraising</a></li>
+        <li><a href="/fundraiser-portal/myDonations">My donations</a></li>
+        <li><a href="/fundraiser-portal/editUser">Account settings</a></li>
+        <li class="signOutLink"><a href="/giving/j_spring_security_logout" class="signout">Sign out</a></li>
+      </ul>
+    </nav>
+     
+  </div>
+</div>
+<a class="navOverlay collapse"></a>
+  
+<div class="container-fluid">
+
+<!-- end HEADER -->  
+<!-- --------- MAIN BODY START -------- -->  
+  
+	<div class="row-xl-fix p-b-48 pos-relative">
+		<p class="temp-banner-text center-text m-t-48">Virgin Money Giving <b class="vm-red">on the go</b></p>
+		<img src="http://via.placeholder.com/2000x1500" />
+	</div>
+  
+	<div class="row row-xl-fix m-b-48">
+	
+		<div class="col-sm-8 col-sm-offset-2">
+			<h1 class="center-text vm-red">Your brand new fundraising experience</h1>
+			<p class="center-text">We want fundraising to be a pleasure. So from October, fundraisers will get a whole lot more when they use Virgin Money Giving.</p>
+		</div>
+	
+	</div>
+  
+    <div class="feature row row-xl-fix bkgd-warm-gry-10 p-b-36 p-t-36">
+	
+		<div class="feature__text col-sm-5 col-sm-offset-1">
+			<h2>A smoother set up.</h2>
+			<p>When you first sign up, just tell us what you’re doing and who for. That’s it – you’re all set.</p>
+			<p>Manage fundraising on the move from mobile devices.</p>
+		</div>
+		<div class="feature__img col-sm-5 col-sm-offset-1">
+			<img src="http://via.placeholder.com/600x600" />
+		</div>
+    </div>
+  
+  
+    <div class="feature feature--right row row-xl-fix bkgd-warm-gry-10 p-b-36 p-t-36">
+	
+		<div class="feature__text col-sm-5 col-sm-offset-1 m-b-36">
+			<h2>Brand new ways to spread the word about your fundraising</h2>
+			<p>Share your stories on Facebook, Twitter and LinkedIn. Spread the word.</p>
+			<p>Connect to Facebook in your account settings. Then simply sign in using Facebook every time. Easy.</p>
+			
+			<div class="p-t-8">
+				<span class="m-r-8">
+				<img src="http://staging.uk.virginmoneygiving.com/giving/assets/img/Facebook.svg" alt="Share on Facebook. Link opens in a new window/tab" class="socialMediaLogo">
+				</span>
+				<span class="m-r-8">
+				<img src="http://staging.uk.virginmoneygiving.com/giving/assets/img/Twitter.svg" alt="Share on Twitter. Link opens in a new window/tab" class="socialMediaLogo">
+				</span>
+				<span class="m-r-16 need-reg">
+				<img src="http://staging.uk.virginmoneygiving.com/giving/assets/img/LinkedIn.svg" alt="Share on LinkedIn. Link opens in a new window/tab" class="socialMediaLogo">
+				
+				</span>
+			</div>
+			
+			
+			
+			
+		</div>
+    </div>
+	
+	
+	
+	<div class="feature row row-xl-fix bkgd-warm-gry-10 p-b-36 p-t-36">
+	
+		<div class="feature__text col-sm-5 col-sm-offset-1">
+			<h2>Brand new fundraising and donor dashboard</h2>
+			<p>Everything you need, all in one place.</p>
+			<p>See what you’ve raised, targets you’ve set and who’s been lovely enough to donate.</p>
+			<p>View the vital stats on donations you’ve made – totals, monthly amounts and regular giving. The lot.</p>
+		</div>
+		<div class="feature__img col-sm-5 col-sm-offset-1">
+			<img src="http://via.placeholder.com/600x600" />
+		</div>
+    </div>
+
+	
+	<div class="feature feature--right row row-xl-fix bkgd-warm-gry-10 p-b-36 p-t-36">
+	
+		<div class="feature__text col-sm-5 col-sm-offset-1">
+			<h2>Tell stories more simply.</h2>
+			<p>Help them stand out with eye-catching cover photo photos and a searchable profile photo.</p>
+			<p>Send personalised thank-you notes.</p>
+			<p>Let people know what their donation meant to you.</p>
+		</div>
+		<div class="feature__img col-sm-5 col-sm-offset-1">
+			<img src="http://via.placeholder.com/600x600" />
+		</div>
+    </div>
+
+    
+  
+	<div class="feature row row-xl-fix bkgd-warm-gry-10 p-b-36 p-t-36">
+	
+		<div class="feature__text col-sm-5 col-sm-offset-1">
+			<h2>Fundraise in memory of a loved one, or as part of a team.</h2>
+			<p>One paragraph in here</p>
+		</div>
+		<div class="feature__img col-sm-5 col-sm-offset-1">
+			<img src="http://via.placeholder.com/600x600" />
+		</div>
+    </div>
+
+    
+  
+  
+	<div class="row row-xl-fix m-b-48 m-t-48">
+	
+		<div class="col-sm-8 col-sm-offset-2 center-text">
+			<span><img src="http://via.placeholder.com/80x80" /></span>
+			<h2>Whatever your cause, wherever you are</h2>
+			<p>You don’t need to do anything, whether you’re a charity or a fundraiser. Just enjoy the new pages and changing the world, one challenge at a time.</p>
+		</div>
+	
+	</div>
+  
+  
+    
+  
+  
+  
+  
+  <!--
+  <div class="row p-t-36 ">
+    <div class="row-xl-fix">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 p-b-24 m-b-24"><h1 class="vm-red m-t-16">How we use cookies</h1></div>
+    </div>
+  </div>
+
+  <div class="row row-xl-fix">
+    <div class="col-xs-12 col-sm-10 col-md-3 col-sm-offset-1 col-md-push-7">
+      <nav id="section-nav" class="section-nav m-t-21 m-b-24">
+        <p id="sectionNav-showHide" class="navigation_title"><span id="expand_chevron" class="glyph-right-ppl visible-xs-inline visible-sm-inline">&nbsp;</span>In this section</p>
+
+         <ul id="sectionNavList" class="navigation hideSectionNav">
+            <li class="navigation_item">
+              <a class="navigation__link" href="/giving/terms/charity-terms.jsp">Charity terms and conditions</a>
+            </li>
+
+            <li class="navigation_item">
+              <a class="navigation__link" href="/giving/terms/fundraisers-donors-terms.jsp">Fundraisers and donors terms and conditions</a>
+            </li>
+
+            <li class="navigation_item">
+              <a class="navigation__link" href="/giving/terms/privacy-policy.jsp">Privacy Policy</a>
+            </li>
+
+            <li class="navigation_item">
+              <a class="navigation__link" href="/giving/terms/cookie-usage-policy.jsp">How we use cookies</a>
+            </li>
+          </ul> 
+
+        </nav>
+     </div>
+     <div class="col-xs-12 col-sm-10 col-sm-offset-1 m-b-48 col-md-6 col-md-pull-4">
+
+     <p>By using the Virgin Money Giving website you’re confirming that you’re happy to accept our use of cookies. Here you can find out more about how we use them.</p><h3>What are cookies?</h3><p>Cookies are small, harmless files placed on your computer’s hard drive or in your browser memory when you visit a website.</p><h3>What do cookies do?</h3><p>Cookies help to make the interaction between users and websites faster and easier. For example, they can remember your login details or information you supply as you set up a fundraising page. What cookies don't do is store any personal or confidential information about you.</p><div id="accordion" class="border-top-coolgry-2 border-bottom-coolgry-2" role="tablist" aria-multiselectable="true"><div role="tab" id="ourCookies"><h4 class="collapsed p-t-16 p-b-16" role="button" data-toggle="collapse" data-parent="#accordion" href="#ourCookies-content" aria-expanded="false" aria-controls="ourCookies-content">Find out more about what our cookies do</h4></div><div id="ourCookies-content" class="collapse m-b-36" role="tabpanel" aria-labelledby="ourCookies"><p>While you’re on a website, cookies are important for things like online shopping – for example they’ll remember the items in your shopping basket and make sure they stay there until you complete your transaction.</p><p>In a similar way, when you <strong>make a donation on Virgin Money Giving</strong>, cookies help our site remember the information you give us as you move from page to page. When you revisit a website, cookies also help the site to remember your preferences or registration details.</p><p>We also use cookies to help us <strong>understand how our customers use our website</strong>, for example the pages customers visit and the links they click on. This helps us make improvements and understand what you’re interested in.</p><p>Some of our cookies enable us to learn which advertisements bring customers to our website. This helps us manage our advertising spend by only using adverts and websites that prove to be effective.</p></div></div><h3>Are cookies safe?</h3><p>Yes, cookies are harmless text files. They can’t look into your computer or read any personal information or other material on your hard drive. Cookies can’t carry viruses or install anything harmful on your computer.</p><h3>Why should I keep cookies switched on?</h3><p>We advise you to keep cookies active during your visits to our website because parts of the site rely on them to work properly. For example, you won’t be able to sign in to your account or make a donation if cookies are disabled.</p><p><a href="turning-cookies-on-or-off.jsp">Find out more about turning cookies on or off</a></p>
+
+
+     </div>
+  </div>
+  -->
+  
+<!-- --------- MAIN BODY END -------- -->  
+
+  <div id="toTop" class="right-text top-link-fixed">
+    <a href="#top" class="smaller"><img src="http://staging.uk.virginmoneygiving.com/giving/assets/img/chevron-thin-up.svg" alt="" class="chevronUp"><br><span class="visually-hidden">Back to</span>Top</a>
+  </div>
+  <div class="row footer bkgd-brandgrad">
+    <div class="row-xl-fix">
+        <div class="col-xs-12 col-sm-6 col-md-3 p-t-36">
+           <ul>
+              <li><a href="/giving/about-us/index.jsp">About us</a></li>
+              <li><a href="/giving/about-us/faq.jsp">FAQs</a></li>
+              <li><a href="/giving/contact-us.jsp">Contact us</a></li>
+              <li><a href="/charity-web/charity/reportAbuseDisplay.action-SSL">Report content</a></li>
+           </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 p-t-36">
+           <ul>
+              <li><a href="/giving/terms.jsp">Terms</a></li>
+              <li><a href="/giving/terms/privacy-policy.jsp">Privacy policy</a></li>
+              <li><a href="/giving/terms/cookie-usage-policy.jsp">Cookies</a></li>
+           </ul> 
+        </div> 
+        <div class="visible-sm-block col-xs-12"></div>
+        <div class="col-xs-12 col-sm-6 col-md-3 p-t-36">
+           <ul>
+              <li><a href="http://developer.virginmoneygiving.com/">Developer APIs</a></li>
+              <li><a href="/giving/site-map.jsp">Site map</a></li>
+              <li><a href="/giving/careers/index.jsp">Jobs</a></li>
+           </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 p-t-36">
+           <ul>
+              <li><a href="/charity-web/charity/signInAction.action-SSL">Sign in to your charity account</a></li>
+              <li><a href="/giving/help-guides/charities/index.jsp">Charity help guides</a></li>
+           </ul>
+        </div>
+     </div>
+  </div>
+  <div class="row footer bkgd-brandgrad">
+     <div class="darken m-t-36">
+        <div class="row-xl-fix">
+           <div class="padding-large-vertical col-xs-12 p-t-24">
+              <div class="col-xs-12 col-sm-8 col-sm-push-4">
+                 <p class="vm-white pull-right">A <strong>not-for-profit</strong> company from <img src="http://staging.uk.virginmoneygiving.com/giving/assets/img/vm-white-logo.png" alt="Virgin Money" width="133px"></p>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-sm-pull-8 m-t-8 m-b-24">
+                 <a href="http://www.facebook.com/virginmoneygiving" class="social-facebook no-underline m-r-8" rel="external"><img src="http://staging.uk.virginmoneygiving.com/giving/assets/img/Facebook.svg" alt="Find us on Facebook. Link opens in a new window/tab" class="socialMediaLogo" /></a>
+                 <a href="http://twitter.com/VMGiving" class="social-facebook no-underline" rel="external"><img src="http://staging.uk.virginmoneygiving.com/giving/assets/img/Twitter.svg" alt="Follow us on Twitter. Link opens in a new window/tab" class="socialMediaLogo"/></a>
+              </div>
+           </div>
+        </div>
+        <div style="clear:both;"></div>
+     </div>
+  </div>
+</div>
+
+<script src="http://staging.uk.virginmoneygiving.com/giving/assets/js/jquery.min.js"></script>
+<script src="http://staging.uk.virginmoneygiving.com/giving/assets/js/bootstrap.min.js"></script>
+<script src="http://staging.uk.virginmoneygiving.com/giving/assets/js/brochureware.js"></script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PB4V2B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PB4V2B');</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7409661-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script src="//www.google.com/jsapi?key=AIzaSyA5m1Nc8ws2BbmPRwKu5gFradvD_hgq6G0" type="text/javascript"></script>
+</body>
+</html>
